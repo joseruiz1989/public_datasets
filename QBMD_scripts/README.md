@@ -17,9 +17,12 @@ and calculating **eigenstates and photocurrent** in quantum wells.
 
 To run on **Linux**, open a terminal and execute:
 
+```
+chmod +x /complete_path/QBMD_scripts/fortran_files/20240825_Superlattice_Eigensates_Photocurrent_inputs.exe
+```
 
-
-fortran_files/20240825_Superlattice_Eigensates_Photocurrent_inputs.exe
+chmod is a Unix/Linux command used to change file permissions.
++x adds the "executable" permission to the file.
 
 
 ### Required Arguments
@@ -36,6 +39,8 @@ The program requires arguments in the following order:
 | 6     | LQWt       | Thickness of the right quantum wells (nm) |
 | 7     | LQBt       | Thickness of the right barriers (nm) |
 | 8     | out_folder | Output folder where `.txt` files will be saved. Must be enclosed in `""` and end with `/`. |
+
+**it is important to put the out_folder complete, not a relative path!**
 
 **Important Comments:**
 
@@ -89,8 +94,8 @@ RWxRQWt_RQBt__MQWt__LWxLQWt_LQBt/
 ## 4️⃣ Example Execution
 
 
+/complete_path/QBMD_scripts/fortran_files/20240825_Superlattice_Eigensates_Photocurrent_inputs.exe 5 2.0d0 7.0d0 2.5d0 1 2.0d0 7.0d0 "/complete_path/QBMD_scripts/temp_files/05x02.0_07.0__02.5__01x02.0_07.0/"
 
-QBMD_scripts\fortran_files\20240825_Superlattice_Eigensates_Photocurrent_inputs.exe 5 2.0d0 7.0d0 2.5d0 1 2.0d0 7.0d0 "QBMD_scripts\temp_files\05x02.0_07.0__02.5__01x02.0_07.0\"
 
 
 **Comments:**
@@ -118,7 +123,7 @@ QBMD_scripts\fortran_files\20240825_Superlattice_Eigensates_Photocurrent_inputs.
 
 ## 7️⃣ License
 
-[Specify your project license here, e.g., MIT, GPL, etc.]
+check in: https://github.com/LabSem-PUC-Rio/e-mulate
 
 ---
 
